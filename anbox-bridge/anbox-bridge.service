@@ -1,0 +1,9 @@
+[Unit]
+Description=Anbox Bridge
+Wants=anbox-container-manager.service
+
+[Service]
+ExecStart=/usr/bin/anbox-bridge.sh
+
+[Install]
+WantedBy=multi-user.target
